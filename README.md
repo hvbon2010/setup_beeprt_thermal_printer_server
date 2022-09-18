@@ -63,7 +63,9 @@ Set default options: Go to printers -> your USB printer -> select default option
 
 ![image](https://user-images.githubusercontent.com/32226325/190887735-b9199292-f07e-4a6d-8200-e6464bc69eff.png)
 
-Sample, change media size to 100x120 mmm
+Sample, change media size to 74*105 mmm
+
+Get size of pager: https://papersizes.io/a/a7
 
 ![image](https://user-images.githubusercontent.com/32226325/190887753-b9254bb2-b9a7-44dc-a7c3-15459f02dd25.png)
 
