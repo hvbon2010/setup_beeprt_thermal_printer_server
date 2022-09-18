@@ -114,17 +114,19 @@ Restart samba server:
 ## Window client
 ### Install printer driver (.inf file)
 #### For beeprt BY-XXX
-https://www.seagullscientific.com/downloads/printer-drivers/beeprt-by-368/
+https://help.beeprt.com/support/solutions/articles/60000561059-install-beeprt-driver-on-windows
 
-![image](https://user-images.githubusercontent.com/32226325/190885904-46fb944c-0120-4900-a8ce-98a77592cdfd.png)
+https://beeprt.freshdesk.com/helpdesk/attachments/60003204797
 
-![image](https://user-images.githubusercontent.com/32226325/190885914-8a173eb7-7418-4210-beca-275f35139ed2.png)
+Install -> The driver (File BEEPRT.inf at location: `C:\Program Files\Beeprt\x64`
 
-![image](https://user-images.githubusercontent.com/32226325/190885927-426a2218-f1fb-4b21-87e6-09c2229755f6.png)
+![image](https://user-images.githubusercontent.com/32226325/190890708-2f9cae37-f6fe-4808-9c92-586ebcbca044.png)
 
-In this step, select Cancel
+![image](https://user-images.githubusercontent.com/32226325/190890759-6eb0baf5-be39-4c4c-863d-0e56d36f16b3.png)
 
-![image](https://user-images.githubusercontent.com/32226325/190885948-3e5bf3bf-0225-401a-b988-54dd25f01f23.png)
+In this step, press exit
+
+![image](https://user-images.githubusercontent.com/32226325/190890785-4df057c0-9aea-480d-b786-138969a71998.png)
 
 ### Add CUPs printer
 Go to Networks -> Enter \\[printer_server_ip] in the textbox -> Enter -> The printer will be showed
