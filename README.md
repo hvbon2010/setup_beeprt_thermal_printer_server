@@ -177,3 +177,39 @@ We have a trouble with default label printer driver on Linux. So, we need update
 
 Go to Cups web -> printers -> select the printer you want update driver -> Modify printer
 
+# Set a Paper size for Window printer
+Go to Printers & Scanner -> Select your printer -> manage
+
+![image](https://user-images.githubusercontent.com/32226325/190896871-092ae796-5ba8-4233-baeb-001c6e0cc785.png)
+
+Select Printer Property
+
+![image](https://user-images.githubusercontent.com/32226325/190896892-7d719d44-1f89-48d9-a972-c9d850250f18.png)
+
+Select Reference -> Page setup -> New
+
+![image](https://user-images.githubusercontent.com/32226325/190896912-fd61828a-ed8d-4323-bbf1-d910c2f155db.png)
+
+![image](https://user-images.githubusercontent.com/32226325/190896932-3367f0f3-0e1f-4aa5-b1c5-cc2d0672ce95.png)
+
+Create new pager size -> Apply -> OK
+
+![image](https://user-images.githubusercontent.com/32226325/190896956-4fa43c86-2659-48d1-89a8-d96c773e6a9e.png)
+
+# Print on Window
+Should use Adobe Reader tool to print page
+
+Open PDF file with Adobe Reader -> `Ctrl + P`
+
+Select Page setup:
+
+![image](https://user-images.githubusercontent.com/32226325/190897015-4e1a5069-3875-4278-a6f6-b1a72653a5b6.png)
+
+You can select Fit size options to fit PDF file with actual pager size
+
+![image](https://user-images.githubusercontent.com/32226325/190897106-3d92f394-f95e-443a-9a83-170cc14bd110.png)
+
+Or better, you should use the Custom scale (Note; to reload preview scaled, select to other mode (ex: Fit) and back to Custom Scale)
+
+![image](https://user-images.githubusercontent.com/32226325/190897149-c5335bbf-a031-429f-a7ea-412534fd68d0.png)
+
