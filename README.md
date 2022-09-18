@@ -83,3 +83,57 @@ Reload samba config:
 Restart samba server:
 
 `sudo systemctl restart smbd`
+
+# Setup thermal printer on the client PC (other OS like MAC or Windows)
+## Window client
+### Install printer driver (.inf file)
+#### For beeprt BY-XXX
+https://www.seagullscientific.com/downloads/printer-drivers/beeprt-by-368/
+
+![image](https://user-images.githubusercontent.com/32226325/190885904-46fb944c-0120-4900-a8ce-98a77592cdfd.png)
+
+![image](https://user-images.githubusercontent.com/32226325/190885914-8a173eb7-7418-4210-beca-275f35139ed2.png)
+
+![image](https://user-images.githubusercontent.com/32226325/190885927-426a2218-f1fb-4b21-87e6-09c2229755f6.png)
+
+In this step, select Cancel
+
+![image](https://user-images.githubusercontent.com/32226325/190885948-3e5bf3bf-0225-401a-b988-54dd25f01f23.png)
+
+### Add CUPs printer
+Go to Networks -> Enter \\[printer_server_ip] in the textbox -> Enter -> The printer will be showed
+
+![image](https://user-images.githubusercontent.com/32226325/190886095-b0611361-e971-44cf-8564-01eabe965073.png)
+
+Go to printers & scanner -> Add printers & scanner
+
+![image](https://user-images.githubusercontent.com/32226325/190886003-03db4b09-e53a-4058-bca7-1b344b0db8c8.png)
+
+Select this printer that I want isn't listed -> Select a shared printer by name -> Enter \\[printer_server_ip]\[printer_name]
+
+![image](https://user-images.githubusercontent.com/32226325/190886128-46ed4ced-bf3a-40dc-b8c2-13f88dae77ff.png)
+
+Select Next -> No driver found. So, we need to setup driver to printer driver list.
+
+![image](https://user-images.githubusercontent.com/32226325/190886157-ebf93d0a-4c11-4193-a8d8-6b07c965f1a6.png)
+
+Select Have disk and point to file beeprt.inf
+
+![image](https://user-images.githubusercontent.com/32226325/190886176-5ff37b87-e0b8-48e3-822e-0f2ec03dc5d6.png)
+
+![image](https://user-images.githubusercontent.com/32226325/190886196-8a29b95d-8614-4ec6-a731-ff88e09b231c.png)
+
+![image](https://user-images.githubusercontent.com/32226325/190886211-177d9e1d-973f-40c9-ad17-e788d3ecb459.png)
+
+The beeprt printer driver will be available in list
+
+Select "Beeprt Label printer 3 inch" for BY-368 printer (AYIN)
+
+![image](https://user-images.githubusercontent.com/32226325/190886249-fa5aa2ea-e350-488e-ab85-a500ea426c34.png)
+ 
+Successfull added, You can test printer by "print a test page button" Enjoying...
+
+![image](https://user-images.githubusercontent.com/32226325/190886263-703f88ca-f9bb-47fe-b2c1-5f909239e28d.png)
+
+![image](https://user-images.githubusercontent.com/32226325/190886283-1b520dcc-0171-441d-b7db-8bc5054a05cd.png)
+
