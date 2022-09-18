@@ -137,3 +137,9 @@ Successfull added, You can test printer by "print a test page button" Enjoying..
 
 ![image](https://user-images.githubusercontent.com/32226325/190886283-1b520dcc-0171-441d-b7db-8bc5054a05cd.png)
 
+# Use http adrress instead samba server printer
+We can add a printer use CUPs printer address
+
+![image](https://user-images.githubusercontent.com/32226325/190887214-474351e4-ead5-4d9f-9ed0-68dfd9ad1fbb.png)
+
+
