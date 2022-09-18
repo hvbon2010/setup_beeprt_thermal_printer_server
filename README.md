@@ -21,25 +21,51 @@ sudo systemctl restart cups
 
 ### Setup Printer server
 
-Open CUPs web browser: `http://localhost:631`
+Insert USB of your printer to driver first, the Linux PC will be setting up first
 
-![image](https://user-images.githubusercontent.com/32226325/190885611-6dbbbad2-d236-4ec0-b4e0-42b62de6c576.png)
+![image](https://user-images.githubusercontent.com/32226325/190887513-93fad9d0-8b2f-44af-b8dd-44c705bc22fc.png)
 
-![image](https://user-images.githubusercontent.com/32226325/190885627-b89b127a-f152-4f04-8569-00f4b9079074.png)
+Open CUPs web browser: `http://localhost:631` -> Select printers tab -> Select to your USB printer
 
-Select beeprt printer, and select shared printer
+![image](https://user-images.githubusercontent.com/32226325/190887540-c4f84d6e-d6a7-46fa-9e5c-5ab1bc293aa5.png)
 
-![image](https://user-images.githubusercontent.com/32226325/190885638-ce9ec2de-8e5b-42d0-910d-e3ad51391f07.png)
+![image](https://user-images.githubusercontent.com/32226325/190887558-9c4982a7-2708-4424-8cce-8c23ea50dcaf.png)
 
-Select driver installed, and install printer
+Select Modify printer, wait for seconds
 
-![image](https://user-images.githubusercontent.com/32226325/190885647-be467249-d00a-42ca-9dc2-424f59028eff.png)
+![image](https://user-images.githubusercontent.com/32226325/190887583-1e3599e3-3282-485a-917a-d3ca6ba0db43.png)
 
-Set Printer Options, select compatible media size -> set default options
+![image](https://user-images.githubusercontent.com/32226325/190887602-6835ee60-4a5f-4043-a112-334a43d03579.png)
 
-![image](https://user-images.githubusercontent.com/32226325/190885705-797b33f7-79ae-4641-950f-cc288f004654.png)
+Select continue
 
-![image](https://user-images.githubusercontent.com/32226325/190885727-bf66cda2-3d59-4830-bb04-d5b1bb34cf1b.png)
+![image](https://user-images.githubusercontent.com/32226325/190887615-6b249cee-a2b9-4dfa-9d83-11caf9fcb662.png)
+
+And continue
+
+![image](https://user-images.githubusercontent.com/32226325/190887619-53862d4b-ba85-4546-8da1-aca55b60bde4.png)
+
+If the printer model do not listed, please select PDD file from downloaded driver
+
+![image](https://user-images.githubusercontent.com/32226325/190887664-3e24e890-f926-4213-b8e8-19b5881f0927.png)
+
+![image](https://user-images.githubusercontent.com/32226325/190887672-34850644-7f45-435e-8695-dbc35de2c3bc.png)
+
+Modify printer
+
+![image](https://user-images.githubusercontent.com/32226325/190887686-9524076c-8be8-4183-8085-854b776861d0.png)
+
+Successfully!
+
+![image](https://user-images.githubusercontent.com/32226325/190887696-10ecbeeb-43fb-4d9b-8034-3afbc2e8f9c4.png)
+
+Set default options: Go to printers -> your USB printer -> select default options -> Change something in here
+
+![image](https://user-images.githubusercontent.com/32226325/190887735-b9199292-f07e-4a6d-8200-e6464bc69eff.png)
+
+Sample, change media size to 100x120 mmm
+
+![image](https://user-images.githubusercontent.com/32226325/190887753-b9254bb2-b9a7-44dc-a7c3-15459f02dd25.png)
 
 
 ### Install Samba
