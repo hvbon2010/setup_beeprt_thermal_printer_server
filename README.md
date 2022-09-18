@@ -161,9 +161,9 @@ Select "BY-426" for BY-368 printer (AYIN)
  
 Successfull added, You can test printer by "print a test page button" Enjoying...
 
-![image](https://user-images.githubusercontent.com/32226325/190886263-703f88ca-f9bb-47fe-b2c1-5f909239e28d.png)
+![image](https://user-images.githubusercontent.com/32226325/190891003-ffc07f12-5495-4798-be05-cfa6cc016ac1.png)
 
-![image](https://user-images.githubusercontent.com/32226325/190886283-1b520dcc-0171-441d-b7db-8bc5054a05cd.png)
+![image](https://user-images.githubusercontent.com/32226325/190891011-7c80edf3-9b66-4d35-a4bf-f2f3d4ec338b.png)
 
 # Use http adrress instead samba server printer
 We can add a printer use CUPs printer address
