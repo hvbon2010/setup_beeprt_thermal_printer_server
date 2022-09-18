@@ -142,4 +142,8 @@ We can add a printer use CUPs printer address
 
 ![image](https://user-images.githubusercontent.com/32226325/190887214-474351e4-ead5-4d9f-9ed0-68dfd9ad1fbb.png)
 
+# Label printer can not work well
+We have a trouble with default label printer driver on Linux. So, we need update it.
+
+Go to Cups web -> printers -> select the printer you want update driver -> Modify printer
 
