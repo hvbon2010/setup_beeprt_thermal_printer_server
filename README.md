@@ -145,19 +145,19 @@ Select Next -> No driver found. So, we need to setup driver to printer driver li
 
 ![image](https://user-images.githubusercontent.com/32226325/190886157-ebf93d0a-4c11-4193-a8d8-6b07c965f1a6.png)
 
-Select Have disk and point to file beeprt.inf
+Select Have disk and point to file BEEPRT.inf
 
 ![image](https://user-images.githubusercontent.com/32226325/190886176-5ff37b87-e0b8-48e3-822e-0f2ec03dc5d6.png)
 
 ![image](https://user-images.githubusercontent.com/32226325/190886196-8a29b95d-8614-4ec6-a731-ff88e09b231c.png)
 
-![image](https://user-images.githubusercontent.com/32226325/190886211-177d9e1d-973f-40c9-ad17-e788d3ecb459.png)
+![image](https://user-images.githubusercontent.com/32226325/190890904-3005dc49-215f-4af6-921e-31117461c86d.png)
 
 The beeprt printer driver will be available in list
 
-Select "Beeprt Label printer 3 inch" for BY-368 printer (AYIN)
+Select "BY-426" for BY-368 printer (AYIN)
 
-![image](https://user-images.githubusercontent.com/32226325/190886249-fa5aa2ea-e350-488e-ab85-a500ea426c34.png)
+![image](https://user-images.githubusercontent.com/32226325/190890936-8ab770d6-3b02-4a1e-8881-88c6081a76f7.png)
  
 Successfull added, You can test printer by "print a test page button" Enjoying...
 
