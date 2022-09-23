@@ -213,3 +213,10 @@ Or better, you should use the Custom scale (Note; to reload preview scaled, sele
 
 ![image](https://user-images.githubusercontent.com/32226325/190897149-c5335bbf-a031-429f-a7ea-412534fd68d0.png)
 
+# Setup Beeprt on Linux Arm64 (Like Raspberry Pi)
+## Use Rollo driver for Arm64 instead
+Setup this driver is same with setup on Linux x86, but note that, the Media size (width = 3 inch and Height >= 4.3 inch).
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32226325/191894005-3d584aed-18c6-4b35-9d5c-f10bb07d8f63.png">
+
+<img width="1433" alt="image" src="https://user-images.githubusercontent.com/32226325/191894076-f5d0ab23-00c5-4da6-82de-7a0554495379.png">
