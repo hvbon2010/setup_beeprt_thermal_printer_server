@@ -215,8 +215,15 @@ Or better, you should use the Custom scale (Note; to reload preview scaled, sele
 
 # Setup Beeprt on Linux Arm64 (Like Raspberry Pi)
 ## Use Rollo driver for Arm64 instead
-Setup this driver is same with setup on Linux x86, but note that, the Media size (width = 3 inch and Height >= 4.3 inch).
+Setup this driver is same with setup on Linux x86, but note that, the Media size should use (width = 3.2 inch and Height = 4.3 inch).
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/32226325/191894005-3d584aed-18c6-4b35-9d5c-f10bb07d8f63.png">
+<img width="1432" alt="image" src="https://user-images.githubusercontent.com/32226325/191894536-86524796-9612-4acf-b62f-610c0ed93c7d.png">
 
 <img width="1433" alt="image" src="https://user-images.githubusercontent.com/32226325/191894076-f5d0ab23-00c5-4da6-82de-7a0554495379.png">
+
+## Change A7 size map with printer size
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/32226325/191894646-d41f4756-6f44-48bd-9e34-9f5b6522d185.png">
+
+`3.2x4.3 inch ~ 81x110 mm`
+
+<img width="695" alt="image" src="https://user-images.githubusercontent.com/32226325/191894692-64f61785-37e1-4626-a1e6-4c2104f09ee7.png">
