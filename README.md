@@ -213,13 +213,11 @@ Or better, you should use the Custom scale (Note; to reload preview scaled, sele
 
 ![image](https://user-images.githubusercontent.com/32226325/190897149-c5335bbf-a031-429f-a7ea-412534fd68d0.png)
 
-# Setup Beeprt on Linux Arm64 (Like Raspberry Pi)
-## Use Rollo driver for Arm64 instead
-Setup this driver is same with setup on Linux x86, but note that, the Media size should use (width = 3.2 inch and Height = 4.3 inch).
+# Setup Beeprt on Linux Arm (armv7 is 32 bit arm (Raspberry Pi 3) and armv8 is 64 bit arm (Orange Pi 3 LTS))
+## Use Zebra CPCL Label Printer instead
+Setup this driver is same with setup on Linux x86, but note that, the media size is: 4x5 inch
 
-<img width="1432" alt="image" src="https://user-images.githubusercontent.com/32226325/191894536-86524796-9612-4acf-b62f-610c0ed93c7d.png">
-
-<img width="1433" alt="image" src="https://user-images.githubusercontent.com/32226325/191894076-f5d0ab23-00c5-4da6-82de-7a0554495379.png">
+<img width="1437" alt="image" src="https://user-images.githubusercontent.com/32226325/193323133-40df7306-8408-4fe9-8c6b-6700e4c7fad9.png">
 
 ## Change A7 size map with printer size
 <img width="777" alt="image" src="https://user-images.githubusercontent.com/32226325/191894646-d41f4756-6f44-48bd-9e34-9f5b6522d185.png">
