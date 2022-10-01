@@ -35,13 +35,7 @@ https://drive.google.com/drive/folders/1RovQ-Cr1pb36OcfGu5O9603DJ-jZFgll?usp=sha
 ![image](https://user-images.githubusercontent.com/32226325/190885585-3f57bd29-fd5c-4d02-b1c2-d0b49301c83d.png)
 
 ### Install CUPs
-Preconditions:
-
-- Install CUPs first (CUPs for apple IOS): We must overide by OpenPrintings after
-
-`sudo apt-get install cups`
-
-- Setup tools to build OpenPrintings
+Preconditions, setup tools to build OpenPrintings
 
 ```
 sudo apt-get install autoconf build-essential libavahi-client-dev \
@@ -69,6 +63,12 @@ Change `ListenPort` to `Port`
 Change Retrict Access this CUPs browser
 
 <img width="394" alt="image" src="https://user-images.githubusercontent.com/32226325/193384227-51666333-adce-4b91-aba4-e57bd0f1a75b.png">
+
+`sudo vim /etc/cups/cups-files.conf`
+
+Change `SystemGroup sys root` to `SystemGroup lpadmin`: This is root cause we can not login to admin cups on browers (error: This site can’t be reached)
+
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/32226325/193419720-0cb22ee4-eb78-41f0-a84f-840c8118d5fd.png">
 
 Add printer group
 
