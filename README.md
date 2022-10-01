@@ -52,26 +52,6 @@ make -j
 sudo make install
 ```
 
-Change default configs and restart CUPs
-
-`sudo vim /etc/cups/cupsd.conf`
-
-Change `ListenPort` to `Port`
-
-<img width="402" alt="image" src="https://user-images.githubusercontent.com/32226325/193384208-8eb97e20-2655-43b8-8dfd-11f6823c12f1.png">
-
-Change Retrict Access this CUPs browser
-
-<img width="394" alt="image" src="https://user-images.githubusercontent.com/32226325/193384227-51666333-adce-4b91-aba4-e57bd0f1a75b.png">
-
-`sudo vim /etc/cups/cups-files.conf`
-
-Change `SystemGroup sys root` to `SystemGroup lpadmin`: This is root cause we can not login to admin cups on browers (error: This site can’t be reached)
-
-<img width="1552" alt="image" src="https://user-images.githubusercontent.com/32226325/193421063-1eec2104-e4da-484b-ac6c-88b0be67b528.png">
-
-<img width="646" alt="image" src="https://user-images.githubusercontent.com/32226325/193419720-0cb22ee4-eb78-41f0-a84f-840c8118d5fd.png">
-
 Add printer group
 
 `sudo groupadd lpadmin`
@@ -93,6 +73,16 @@ sudo systemctl restart cups
 sudo cupsctl --remote-any
 sudo systemctl restart cups
 ```
+
+Change `SystemGroup sys root` to `SystemGroup lpadmin`: This is root cause we can not login to admin cups on browers (error: This site can’t be reached)
+
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/32226325/193421063-1eec2104-e4da-484b-ac6c-88b0be67b528.png">
+
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/32226325/193419720-0cb22ee4-eb78-41f0-a84f-840c8118d5fd.png">
+
+Restart CUPs again
+
+`sudo systemctl restart cups`
 
 ### Setup Printer server
 
