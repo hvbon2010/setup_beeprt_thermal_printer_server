@@ -1,10 +1,19 @@
 # A Brief History of CUPS
 From https://openprinting.github.io/cups/
-```
-CUPS was originally developed by Michael R Sweet at Easy Software Products starting in 1997, with the first beta release on May 14, 1999. Not long after, Till Kamppeter started packaging CUPS for Mandrake Linux and created the Foomatic drivers for CUPS, leading the adoption of CUPS for printing on Linux. Apple licensed CUPS for macOS in 2002, and in February 2007 Apple purchased CUPS and hired Michael to continue its development as an open source project.
 
-In December 2019, Michael left Apple to start Lakeside Robotics. In September 2020 he teamed up with the OpenPrinting developers to fork Apple CUPS to continue its development. Today Apple CUPS is the version of CUPS that is provided with macOS® and iOS® while OpenPrinting CUPS is the version of CUPS being further developed by OpenPrinting for all operating systems.
-```
+CUPS was originally developed by Michael R Sweet at Easy Software Products starting in 1997, with the first beta release on May 14, 1999. Not long after, 
+
+Till Kamppeter started packaging CUPS for Mandrake Linux and created the Foomatic drivers for CUPS, leading the adoption of CUPS for printing on Linux. 
+
+Apple licensed CUPS for macOS in 2002, and in February 2007 Apple purchased CUPS and hired Michael to continue its development as an open source project.
+
+
+In December 2019, Michael left Apple to start Lakeside Robotics. In September 2020 he teamed up with the OpenPrinting developers to fork Apple CUPS to 
+
+continue its development. Today Apple CUPS is the version of CUPS that is provided with macOS® and iOS® while OpenPrinting CUPS is the version of CUPS 
+
+being further developed by OpenPrinting for all operating systems.
+
 
 Summary,
 
