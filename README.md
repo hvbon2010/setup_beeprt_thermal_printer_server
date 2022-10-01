@@ -35,26 +35,9 @@ https://drive.google.com/drive/folders/1RovQ-Cr1pb36OcfGu5O9603DJ-jZFgll?usp=sha
 ![image](https://user-images.githubusercontent.com/32226325/190885585-3f57bd29-fd5c-4d02-b1c2-d0b49301c83d.png)
 
 ### Install CUPs
-Preconditions, setup tools to build OpenPrintings
+#### Install CUPs for apple OS first
 
-```
-sudo apt-get install autoconf build-essential libavahi-client-dev \
-     libgnutls28-dev libkrb5-dev libnss-mdns libpam-dev \
-     libsystemd-dev libusb-1.0-0-dev zlib1g-dev
-```
-
-Clone OpenPrinting CUPs source code and build, and then, install to your system
-```
-git clone https://github.com/OpenPrinting/cups.git
-cd cups
-./configure
-make -j 
-sudo make install
-```
-
-Add printer group
-
-`sudo groupadd lpadmin`
+`sudo apt-get install cups`
 
 lpadmin binary is located at /usr/sbin With Debian OS, we need to export /usr/sbin and /sbin to the PATH variable environments 
 
@@ -83,6 +66,25 @@ Change `SystemGroup sys root` to `SystemGroup lpadmin`: This is root cause we ca
 Restart CUPs again
 
 `sudo systemctl restart cups`
+
+#### Build OpenPrintings
+
+Setup build tools first
+
+```
+sudo apt-get install autoconf build-essential libavahi-client-dev \
+     libgnutls28-dev libkrb5-dev libnss-mdns libpam-dev \
+     libsystemd-dev libusb-1.0-0-dev zlib1g-dev
+```
+
+Clone OpenPrinting CUPs source code and build, and then, install to your system
+```
+git clone https://github.com/OpenPrinting/cups.git
+cd cups
+./configure
+make -j 
+sudo make install
+```
 
 ### Setup Printer server
 
