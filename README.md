@@ -51,12 +51,21 @@ make -j
 sudo make install
 ```
 
-Add current user to lpadmin and start CUPs
-```
-sudo usermod -a -G lpadmin $USER
-sudo cupsctl --remote-any
-sudo systemctl restart cups
-```
+Change default configs and restart CUPs
+
+`sudo vim /etc/cups/cupsd.conf`
+
+Change `ListenPort` to `Port`
+
+<img width="402" alt="image" src="https://user-images.githubusercontent.com/32226325/193384208-8eb97e20-2655-43b8-8dfd-11f6823c12f1.png">
+
+Change Retrict Access this CUPs browser
+
+<img width="394" alt="image" src="https://user-images.githubusercontent.com/32226325/193384227-51666333-adce-4b91-aba4-e57bd0f1a75b.png">
+
+Restart CUPs
+
+`sudo systemctl restart cups`
 
 ### Setup Printer server
 
