@@ -86,8 +86,9 @@ Add current user to lpadmin goup
 
 ```
 sudo usermod -a -G lpadmin $USER
-sudo cupsctl --remote-any
 sudo systemctl enable cups
+sudo systemctl restart cups
+sudo cupsctl --remote-any
 sudo systemctl restart cups
 ```
 
