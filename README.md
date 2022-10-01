@@ -35,7 +35,14 @@ https://drive.google.com/drive/folders/1RovQ-Cr1pb36OcfGu5O9603DJ-jZFgll?usp=sha
 ![image](https://user-images.githubusercontent.com/32226325/190885585-3f57bd29-fd5c-4d02-b1c2-d0b49301c83d.png)
 
 ### Install CUPs
-Preconditions, setup tools to build first
+Preconditions:
+
+- Install CUPs first (CUPs for apple IOS): We must overide by OpenPrintings after
+
+`sudo apt-get install cups`
+
+- Setup tools to build OpenPrintings
+
 ```
 sudo apt-get install autoconf build-essential libavahi-client-dev \
      libgnutls28-dev libkrb5-dev libnss-mdns libpam-dev \
@@ -63,9 +70,26 @@ Change Retrict Access this CUPs browser
 
 <img width="394" alt="image" src="https://user-images.githubusercontent.com/32226325/193384227-51666333-adce-4b91-aba4-e57bd0f1a75b.png">
 
-Restart CUPs
+Add printer group
 
-`sudo systemctl restart cups`
+`sudo groupadd lpadmin`
+
+lpadmin binary is located at /usr/sbin With Debian OS, we need to export /usr/sbin and /sbin to the PATH variable environments 
+
+`vim ~/.bashrc`
+
+`export PATH=$PATH:/usr/sbin:/sbin`
+
+`source ~/.bashrc`
+
+Add current user to lpadmin goup
+
+```
+sudo usermod -a -G lpadmin $USER
+sudo cupsctl --remote-any
+sudo systemctl enable cups
+sudo systemctl restart cups
+```
 
 ### Setup Printer server
 
