@@ -1,3 +1,19 @@
+# A Brief History of CUPS
+From https://openprinting.github.io/cups/
+```
+CUPS was originally developed by Michael R Sweet at Easy Software Products starting in 1997, with the first beta release on May 14, 1999. Not long after, Till Kamppeter started packaging CUPS for Mandrake Linux and created the Foomatic drivers for CUPS, leading the adoption of CUPS for printing on Linux. Apple licensed CUPS for macOS in 2002, and in February 2007 Apple purchased CUPS and hired Michael to continue its development as an open source project.
+
+In December 2019, Michael left Apple to start Lakeside Robotics. In September 2020 he teamed up with the OpenPrinting developers to fork Apple CUPS to continue its development. Today Apple CUPS is the version of CUPS that is provided with macOS® and iOS® while OpenPrinting CUPS is the version of CUPS being further developed by OpenPrinting for all operating systems.
+```
+
+Summary,
+
+CUPs: For apple OS
+
+OpenPrinting CUPs: For Linux OS (Ubuntu, Debian, Armbian, ...)
+
+So, We need to use OpenPrinting CUPs for Linux OS.
+
 # Setup Thermal Printer Server (In Linux)
 Prefer: https://pimylifeup.com/raspberry-pi-print-server/
 
@@ -10,10 +26,24 @@ https://drive.google.com/drive/folders/1RovQ-Cr1pb36OcfGu5O9603DJ-jZFgll?usp=sha
 ![image](https://user-images.githubusercontent.com/32226325/190885585-3f57bd29-fd5c-4d02-b1c2-d0b49301c83d.png)
 
 ### Install CUPs
+Preconditions, setup tools to build first
 ```
-sudo apt update
-sudo apt upgrade
-sudo apt install cups
+sudo apt-get install autoconf build-essential libavahi-client-dev \
+     libgnutls28-dev libkrb5-dev libnss-mdns libpam-dev \
+     libsystemd-dev libusb-1.0-0-dev zlib1g-dev
+```
+
+Clone OpenPrinting CUPs source code and build, and then, install to your system
+```
+git clone https://github.com/OpenPrinting/cups.git
+cd cups
+./configure
+make -j 
+sudo make install
+```
+
+Add current user to lpadmin and start CUPs
+```
 sudo usermod -a -G lpadmin $USER
 sudo cupsctl --remote-any
 sudo systemctl restart cups
