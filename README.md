@@ -68,6 +68,8 @@ Change Retrict Access this CUPs browser
 
 Change `SystemGroup sys root` to `SystemGroup lpadmin`: This is root cause we can not login to admin cups on browers (error: This site can’t be reached)
 
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/32226325/193421063-1eec2104-e4da-484b-ac6c-88b0be67b528.png">
+
 <img width="646" alt="image" src="https://user-images.githubusercontent.com/32226325/193419720-0cb22ee4-eb78-41f0-a84f-840c8118d5fd.png">
 
 Add printer group
