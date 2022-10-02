@@ -79,6 +79,8 @@ Change `SystemGroup ...` to `SystemGroup sys root lpadmin`
 
 <img width="651" alt="image" src="https://user-images.githubusercontent.com/32226325/193452256-0b5493cd-0105-4024-8511-9e991a649441.png">
 
+`sudo systemctl restart cups`
+
 Change CUPs config to support remote from any where in local network
 
 ```
