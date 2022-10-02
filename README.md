@@ -34,40 +34,7 @@ https://drive.google.com/drive/folders/1RovQ-Cr1pb36OcfGu5O9603DJ-jZFgll?usp=sha
 
 ![image](https://user-images.githubusercontent.com/32226325/190885585-3f57bd29-fd5c-4d02-b1c2-d0b49301c83d.png)
 
-### Install CUPs
-#### Install CUPs for apple OS first
-
-`sudo apt-get install cups`
-
-lpadmin binary is located at /usr/sbin With Debian OS, we need to export /usr/sbin and /sbin to the PATH variable environments 
-
-`vim ~/.bashrc`
-
-`export PATH=$PATH:/usr/sbin:/sbin`
-
-`source ~/.bashrc`
-
-Add current user to lpadmin goup
-
-```
-sudo usermod -a -G lpadmin $USER
-sudo systemctl enable cups
-sudo systemctl restart cups
-sudo cupsctl --remote-any
-sudo systemctl restart cups
-```
-
-Change `SystemGroup sys root` to `SystemGroup lpadmin`: This is root cause we can not login to admin cups on browers (error: This site can’t be reached)
-
-<img width="1552" alt="image" src="https://user-images.githubusercontent.com/32226325/193421063-1eec2104-e4da-484b-ac6c-88b0be67b528.png">
-
-<img width="646" alt="image" src="https://user-images.githubusercontent.com/32226325/193419720-0cb22ee4-eb78-41f0-a84f-840c8118d5fd.png">
-
-Restart CUPs again
-
-`sudo systemctl restart cups`
-
-#### Build OpenPrintings
+### Install CUPs OpenPrintings
 
 Setup build tools first
 
@@ -85,6 +52,46 @@ cd cups
 make -j 
 sudo make install
 ```
+
+lpadmin binary is located at /usr/sbin With Debian OS, we need to export /usr/sbin and /sbin to the PATH variable environments 
+
+`vim ~/.bashrc`
+
+`export PATH=$PATH:/usr/sbin:/sbin`
+
+`source ~/.bashrc`
+
+Add current user to lpadmin goup
+
+```
+sudo groupadd lpadmin
+sudo usermod -a -G lpadmin $USER
+```
+
+Enable and start CUPs
+
+```
+sudo systemctl enable cups
+sudo systemctl restart cups
+```
+
+Change `SystemGroup ...` to `SystemGroup sys root lpadmin`
+
+<img width="651" alt="image" src="https://user-images.githubusercontent.com/32226325/193452256-0b5493cd-0105-4024-8511-9e991a649441.png">
+
+Change CUPs config to support remote from any where in local network
+
+```
+sudo cupsctl --remote-any
+sudo systemctl restart cups
+```
+
+If you can not use CUPs https link (https://localhost:631), this error from SSL/TLS cert
+Change in cups-file.conf
+
+`sudo vim /etc/cups/cups-files.conf`
+
+<img width="389" alt="image" src="https://user-images.githubusercontent.com/32226325/193452241-209f0da7-3c15-453c-b2f2-d6d95ad26a89.png">
 
 ### Setup Printer server
 
